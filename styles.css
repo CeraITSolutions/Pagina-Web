@@ -1,0 +1,15 @@
+:root {
+  --font-base: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+}
+
+.page {
+  font-family: var(--font-base);
+}
+
+.header__logo,
+.about__title,
+.portfolio__title,
+.footer__title {
+  font-family: var(--font-heading);
+}
