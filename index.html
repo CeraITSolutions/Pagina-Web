@@ -9,16 +9,18 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="icon" href="assets/Logo2.png" type="image/jpeg">
+    <script src="https://kit.fontawesome.com/f208266391.js" crossorigin="anonymous"></script> <!--FONT AWESOME -->
+    <!-- <link rel="icon" href="assets/Logo2.png" type="image/jpeg"> -->
 </head>
 
 <body class="page">
     <!-- Navigation -->
     <header class="header">
-        <div class="header__container">
-            <a href="#" class="header__logo">CeraIT Solutions</a>
+        <div class="contenedor header__container">
+            <a href="/" class="header__logo">
+                <img src="assets/Logo2.png" alt="Logo" class="header__logo--img">
+            </a>
             <nav class="header__nav nav">
-                <img src="assets/Logo2.png" alt="Logo">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="#sobre-nosotros" class="nav__link">Sobre Nosotros</a>
@@ -30,10 +32,11 @@
                         <a href="#contacto" class="nav__link">Contacto</a>
                     </li>
                 </ul>
+
+                <button class="header__toggle" aria-label="Abrir menú">
+                    <span class="header__icon"><i class="fa-solid fa-bars fa-2xl"></i></span>
+                </button>
             </nav>
-            <button class="header__toggle" aria-label="Abrir menú">
-                <span class="header__icon"></span>
-            </button>
         </div>
     </header>
 
@@ -104,5 +107,6 @@
             <p>&copy; 2025 CeraIT Solutions. Todos los derechos reservados.</p>
         </div>
     </footer>
+    
 </body>
 </html>

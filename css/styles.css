@@ -3,6 +3,19 @@
   --font-heading: 'Poppins', sans-serif;
 }
 
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-snap-type: y mandatory;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  font-size: 16px;/*1rem = 10px*/
+  font-family: var(--font-heading);
+}
+
 .page {
   font-family: var(--font-base);
 }
@@ -13,3 +26,63 @@
 .footer__title {
   font-family: var(--font-heading);
 }
+
+.contenedor {
+  width: 95%;
+  max-width: 145rem;
+  margin: 0 auto;
+}
+
+/*HEADER*/
+
+.header{
+  background-color: gray;
+}
+
+.header__container{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav{
+  display: flex;
+  align-items: end;
+}
+
+.header__logo--img{
+  width: 8rem;
+}
+
+.nav__list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6rem;
+  list-style: none;
+
+  .nav__item{
+    align-items: right;
+    a{
+      text-decoration-line: none;  
+    }
+  }
+}
+
+.header__toggle{
+  display: flex;
+  margin-bottom: .8rem;
+  background-color: gray;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  i{
+    width: 3rem;
+    height: 3rem;
+    align-content: center;
+  }
+}
+
+
+
