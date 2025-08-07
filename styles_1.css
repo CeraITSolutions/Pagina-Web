@@ -4184,7 +4184,7 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-right {
     background-color: var(--color-primary-with-transparency);
 }
 
-:root {
+/* :root {
     --color-primary: #193174;
     --color-secondary: #27aae1;
     --color-accent: #67daff;
@@ -4195,6 +4195,24 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-right {
     --color-periwinkle: #888dff;
     --color-sky-blue: #a7e4f5;
     --color-fog-white: #fafafa;
+    --color-primary-with-transparency: #193174a6;
+    --color-blue-purple-contrast: #595dc3;
+    --header-height: 115px;
+    font-family: var(--font-base);
+} */
+
+/*Nueva paleta de colores*/
+:root {
+    --color-primary: #193174;
+    --color-secondary: #27aae1;
+    --color-accent: #8CD1E8;
+    --color-blue-purple: #797ef6;
+    --color-grayish: #a4a4a6;
+    --color-slate-gray: #706C61;
+    --color-dark-green: #01200F;
+    --color-periwinkle: #888dff;
+    --color-sky-blue: #a7e4f5;
+    --color-fog-white: #F0F7EE;
     --color-primary-with-transparency: #193174a6;
     --color-blue-purple-contrast: #595dc3;
     --header-height: 115px;
