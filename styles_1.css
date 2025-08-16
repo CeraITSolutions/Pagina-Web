@@ -990,7 +990,7 @@ video {
 }
 
 .gap-3 {
-    gap: 0.75rem;
+    gap: 2.75rem;
 }
 
 .gap-4 {
@@ -1650,7 +1650,7 @@ video {
 }
 
 .text-\[\#193476\] {
-    color: rgb(25 52 118 / var(--tw-text-opacity));
+    color: rgb(140 209 232 / var(--tw-text-opacity));
     --tw-text-opacity: 1;
 }
 
@@ -2741,7 +2741,7 @@ video {
     }
 
     .xl\:gap-5 {
-        gap: 1.25rem;
+        gap: 7.25rem;
     }
 
     .xl\:whitespace-nowrap {
@@ -5112,4 +5112,23 @@ button.swiper-pagination-bullet {
 
 .project-link:hover {
     background: var(--color-primary);
+}
+
+.fondo-imagen{
+    position: relative;
+    overflow: hidden;
+}
+
+.fondo-imagen::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url("assets/Fondo_principal.jpg") center/cover no-repeat;
+    filter: blur(6px);
+    z-index: -1;
+}
+
+.imagen-fondo > * {
+  position: relative;
+  z-index: 0; 
 }
