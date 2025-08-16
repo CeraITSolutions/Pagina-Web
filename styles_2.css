@@ -1,6 +1,6 @@
 :root {
-  --font-base: 'Inter', sans-serif;
-  --font-heading: 'Poppins', sans-serif;
+    --font-base: 'Inter', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
 }
 
 .swal2-popup.swal2-toast {
