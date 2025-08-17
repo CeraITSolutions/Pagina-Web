@@ -30,6 +30,8 @@
   <link rel="stylesheet" href="styles_1.css" />
   <link rel="stylesheet" href="styles_2.css" />
   <link rel="stylesheet" href="styles_3.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="swiper-custom.css" />
 </head>
 
 <body class="w-full overflow-x-hidden bg-fog-white">
@@ -243,7 +245,7 @@
           class="font-nexaBold text-2xl leading-5 sm:text-4xl sm:leading-10 lg:text-6xl mb-10 text-center capitalize text-white">
           Conoce a nuestro equipo
         </h2>
-        <div class="swiper mySwiper !static w-full swiper-initialized swiper-horizontal swiper-backface-hidden">
+        <div class="swiper mySwiper !static w-full swiper-initialized swiper-horizontal swiper-backface-hidden"> <!-- empieza carousel Js -->
           <div class="swiper-wrapper">
 
             <!-- ROCK-->
@@ -390,13 +392,15 @@
               </div>
             </article>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
 
           <div
             class="swiper-pagination !relative !bottom-0 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
             <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
               class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
           </div>
-        </div>
+        </div> <!-- termina carousel Js -->
       </section>
     </div>
     <div class="relative py-10 md:py-20 bg-fog-white !pb-0 bg-white" data-astro-cid-wnwsomcx="">
@@ -714,6 +718,9 @@
       </section>
     </div>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="swiper-init.js"></script>
+  <script src="carousel-controls.js"></script>
 </body>
 
 </html>
