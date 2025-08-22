@@ -5123,7 +5123,7 @@ button.swiper-pagination-bullet {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("img/CeraIT_portada.png") center/cover no-repeat;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("assets/Fondo_principal.jpg") center/cover no-repeat;
     filter: blur(6px);
     z-index: -1;
 }
@@ -5190,4 +5190,10 @@ button.swiper-pagination-bullet {
 .color_tecnologias {
     color: #ffffff;
     padding: 1.5rem;
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
 }
