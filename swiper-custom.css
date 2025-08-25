@@ -1,5 +1,10 @@
 .mySwiper {
-  padding: 20px 0;
+  padding: 0% 0;
+  background: #193174;
+  border-radius: 32px;
+  max-width: 80%;
+  margin: 0 10%;
+  box-shadow: 0 8px 32px rgba(25,49,116,0.12);
 }
 
 .swiper-slide {
@@ -7,6 +12,29 @@
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  font-size: 1.8rem;
+  color: black;
+  line-height: 1.5;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  max-width: auto;
+  margin: 0 auto;
+  overflow-y: 50%;
+  scrollbar-width: none;
+  scrollbar-color: #27aae1 #e0e0e0;
+}
+
+/* Scrollbar personalizado para Webkit */
+.swiper-slide::-webkit-scrollbar {
+  width: 8px;
+  display: none;
+}
+.swiper-slide::-webkit-scrollbar-thumb {
+  background: #27aae1;
+  border-radius: 8px;
+}
+.swiper-slide::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 8px;
 }
 
 .swiper-slide:hover {
@@ -65,6 +93,17 @@
 
 .swiper-slide {
   transition: all 0.3s ease;
+}
+
+.swiper-slide p,
+.swiper-slide h3,
+.swiper-slide h2 {
+  font-size: 1.7rem;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: left;
+  line-height: 120%;
 }
 
 .swiper-slide-active {
