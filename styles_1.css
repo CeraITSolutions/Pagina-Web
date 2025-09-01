@@ -5194,7 +5194,15 @@ button.swiper-pagination-bullet {
 
 /*FOOTER*/
 
-footer{
+footer {
     width: 100%;
     padding: 15px 0;
+}
+
+.info_perfil {
+    font-size: 1.7rem;
+    color: purple;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 120%;
 }
