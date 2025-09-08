@@ -30,8 +30,8 @@
   <link rel="stylesheet" href="styles_1.css" />
   <link rel="stylesheet" href="styles_2.css" />
   <link rel="stylesheet" href="styles_3.css" />
+  <link rel="stylesheet" href="css/style-carousel.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="swiper-custom.css" />
 </head>
 
 <body class="w-full overflow-x-hidden bg-fog-white">
@@ -237,167 +237,118 @@
     </div>
     <div class="relative py-10 md:py-20 bg-primary bg-light-bulbs bg-center bg-repeat" data-astro-cid-wnwsomcx="">
 
-      <section class="mx-auto px-8 relative flex flex-col justify-center" style="background:#193174; border-radius:32px; max-width:100%; width:99vw; min-height:10%; box-shadow:8px 20px 38px rgba(25,49,116,0.12); padding:0px 0 0px 0;">
+      <section class=" mx-auto px-8 relative flex flex-col justify-center" style="background:#193174; border-radius:32px; max-width:100%; width:99vw; min-height:10%; box-shadow:8px 20px 38px rgba(25,49,116,0.12); padding:0px 0 0px 0;">
         <h2
           class="font-nexaBold text-2xl leading-5 sm:text-4xl sm:leading-10 lg:text-6xl mb-10 text-center capitalize text-white">
           Conoce a nuestro equipo
         </h2>
-        <div class="swiper mySwiper !static w-full swiper-initialized swiper-horizontal swiper-backface-hidden"> <!-- empieza carousel Js -->
-          <div class="swiper-wrapper">
 
-            <!-- ROCK-->
-            <article class="swiper-slide !flex !h-auto flex-col gap-5 rounded-xl bg-white px-5 py-10 swiper-slide-next"
-            style="width: 500px; margin-right: 40px; border-radius: 24px; min-height: 300px;" data-swiper-slide-index="1">
-              <!-- Imagen -->
-              <div class="flex justify-center" style="height: 170px;">
-                <div class="h-[170px] overflow-hidden rounded-full justify-center">
-                  <img src="assets/rock2.jpeg" class="h-full object-cover" alt="Foto de perfil" loading="lazy"
-                    decoding="async" />
-                </div>
-              </div>
+        <!-- empieza carousel Js -->
 
-              <p class="text-center font-nexaBold text-base" style="text-align: center;">
-                Ricardo Ramírez<br><br>
-                <!--<span class="text-center" style="font-weight: bolder; color: black;">(“Rock”)</span>-->
-              </p>
+        <!--<div class="carousel-container swiper mySwiper !static w-full swiper-initialized swiper-horizontal swiper-backface-hidden">
+          <div class="slider-wrapper swiper-wrapper" id="carousel"> -->
 
-              <!-- Descripción principal -->
-              <p class="font-nexaBold text-base text-primary" >
-                Ingeniero en Informática del IPN con especialidad en ciberseguridad (último año).
-                Con certificaciones en el área de Hacking.
-                Apasionado por la ciberseguridad y el desarrollo web.
-                Con experiencia en pentesting, análisis de vulnerabilidades, desarrollo de herramientas en Python y
-                desarrollo backend con Node.js, JavaScript, bases de datos, frameworks, etc.
-                También manejo redes y protocolos, lo que me permite integrar la seguridad desde la infraestructura
-                hasta el código.
-              </p>
-
-              <!-- Otros elementos si se quieren agregar más adelante -->
-              <div class="mt-auto flex flex-col gap-5">
-                <!-- Espacio reservado para información adicional -->
-                <p class="font-roboto lg:text-base line-clamp-[10] text-center text-primary"></p>
-                <p class="font-roboto lg:text-base line-clamp-[10] text-center text-primary"></p>
-              </div>
-            </article>
-
-            <!-- quali-->
-            <article class="swiper-slide !flex !h-auto flex-col gap-5 rounded-xl bg-white px-5 py-10 swiper-slide-next"
-              style="width: 500px; margin-right: 40px; border-radius: 24px;" data-swiper-slide-index="1">
-              <!-- Imagen -->
-              <div class="flex justify-center" style="height: 170px;">
-                <div class="h-[170px] overflow-hidden rounded-full justify-center">
-                  <img src="assets/quali2.jpeg" class="h-full object-cover" alt="Foto de perfil" loading="lazy"
-                    decoding="async" />
-                </div>
-              </div>
-
-              <p class="text-center font-nexaBold text-base" style="text-align: center;">
-                Ivan Ocampo<br><br>
-                <!--<span class="text-center" style="font-weight: bolder;">(“Quali”)</span>-->
-              </p>
-
-              <!-- Descripción principal -->
-              <p class="font-nexaBold text-base text-primary">
-                Programador backend especializado en la lógica, los datos y la infraestructura.
-                Tengo experiencia en bases de datos, la creación de APIs para la
-                comunicación entre servicios y el despliegue de soluciones escalables en la nube. Tengo una visión
-                integral del desarrollo, con conocimientos del servidor como del cliente, lo que me
-                permite crear soluciones tecnológicas robustas y completas.
-                Trabajé en la Bolsa Mexicana de Valores, me encargué del
-                control de calidad (QA) de los
-                ambientes previos. Fui responsable de la ejecución de planes de prueba, la detección y
-                documentación de defectos, y de asegurar la estabilidad e integridad de los sistemas antes de su
-                implementación en producción.
-              </p>
-
-              <!-- Otros elementos si se quieren agregar más adelante -->
-              <div class="mt-auto flex flex-col gap-5">
-                <!-- Espacio reservado para información adicional -->
-                <p class="font-roboto lg:text-base line-clamp-[10] text-center text-primary"></p>
-                <p class="font-roboto lg:text-base line-clamp-[10] text-center text-primary"></p>
-              </div>
-            </article>
-
-            <!-- Dan-->
-            <article class="swiper-slide !flex !h-auto flex-col gap-5 rounded-xl bg-white px-5 py-10 swiper-slide-next"
-              style="max-width: 500px; margin-right: 40px; border-radius: 24px;" data-swiper-slide-index="1">
-              <!-- Imagen -->
-              <div class="flex justify-center" style="height: 170px;">
-                <div class="h-[170px] overflow-hidden rounded-full justify-center">
-                  <img src="assets/dan2.jpeg" class="h-full object-cover" alt="Foto de perfil" loading="lazy"
-                    decoding="async" />
-                </div>
-              </div>
-
-              <p class="text-center font-nexaBold text-base" style="text-align: center;">
-                Daniel De La Cruz<br><br>
-                <!--<span class="text-center" style="font-weight: bolder;">(“Dan”)</span>-->
-              </p>
-
-              <!-- Descripción principal -->
-              <p class="font-nexaBold text-base text-primary">
-                Ingeniero en Informática (IPN, último año) con casi 2 años de experiencia en soporte técnico, desarrollo
-                de aplicaciones web y análisis de datos. especializado en desarrollar backend con Java y Spring Boot y frontend con
-                Angular (HTML, CSS, TypeScript, SASS). Gestiono y administro bases de datos relacionales SQL como PostgreSQL y MySQL.
-                Despliego aplicaciones en servicios de Amazon Web Services (AWS) tales como S3, Elastic Beanstalk, RDS 
-                para garantizar disponibilidad, escalabilidad y copias de seguridad.
-                Control de versiones con GITHUB. Además, diseño dashboards en Looker Studio (Google) y AWS QuickSight
-                para facilitar la toma de decisiones basadas en datos.
-              </p>
-
-              <!-- Otros elementos si se quieren agregar más adelante -->
-              <div class="mt-auto flex flex-col gap-5">
-                <!-- Espacio reservado para información adicional -->
-                <p class="font-roboto lg:text-base line-clamp-[10] text-center text-primary"></p>
-                <p class="font-roboto lg:text-base line-clamp-[10] text-center text-primary"></p>
-              </div>
-            </article>
-
-            <!-- Gasapo-->
-            <article class="swiper-slide !flex !h-auto flex-col gap-5 rounded-xl bg-white px-5 py-10 swiper-slide-next"
-              style="max-width: 500px; margin-right: 40px; border-radius: 24px;" data-swiper-slide-index="1">
-              <!-- Imagen -->
-              <div class="flex justify-center" style="height: 170px;">
-                <div class="h-[170px] overflow-hidden rounded-full justify-center">
-                  <img src="assets/gasapo.jpeg" class="h-full object-cover" alt="Foto de perfil" loading="lazy"
-                    decoding="async" />
-                </div>
-              </div>
-              <p class="text-center font-nexaBold text-base" style="text-align: center;">
-                Miguel Gómez<br><br>
-                <!--<span class="text-center" style="font-weight: bolder;">(“Gasapo”)</span>-->
-              </p>
-              <!-- Descripción principal -->
-              <p class="font-nexaBold text-base text-primary" style="color: black;">
-                Programador full stack con 4 años de experiencia, con enfoque integral en frontend y
-                backend, especializado en el desarrollo de soluciones escalables, eficientes y mantenibles. 
-                Experiencia en bases de datos SQL y creación de aplicaciones web utilizando HTML,CSS,SASS,
-                JavaScript y PHP. Domino la metodología de desarrollo MVC y el uso de frameworks modernos como
-                CodeIgniter 4 para el backend y Bootstrap para el diseño responsivo en frontend.
-                Experiencia en soporte técnico y mtto preventivo y correctivo de equipos de
-                cómputo, ofresco un servicio integral que abarca tanto el desarrollo de software como
-                la gestión y optimización del hardware.
-                Ofresco soluciones que combinen funcionalidad, rendimiento y una experiencia de usuario
-                de alta calidad.
-              </p>
-
-              <!-- Otros elementos si se quieren agregar más adelante -->
-              <div class="mt-auto flex flex-col gap-5">
-                <!-- Espacio reservado para información adicional -->
-                <p class="font-roboto lg:text-base line-clamp-[10] text-center text-primary"></p>
-                <p class="font-roboto lg:text-base line-clamp-[10] text-center text-primary"></p>
-              </div>
-            </article>
+          <div class="body-containter">
+  <div class="slide-container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+          <div class="card-image">
+            <img src="assets/rock2.jpeg" alt="rock" class="card-img">
           </div>
-          <!--<div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>-->
-
-          <div
-            class="swiper-pagination !relative !bottom-0 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-            <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
-              class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
+        </div>
+        <div class="card-content">
+          <h2 class="name">Ricardo Ramirez</h2>
+          <p class="description">
+            Ingeniero en Informática del IPN con especialidad en ciberseguridad (último año).
+            Con certificaciones en el área de Hacking.
+            Apasionado por la ciberseguridad y el desarrollo web. 
+            Con experiencia en pentesting, análisis de vulnerabilidades, desarrollo de herramientas en Python y
+            desarrollo backend con Node.js, JavaScript, bases de datos, frameworks, etc.
+            También manejo redes y protocolos, lo que me permite integrar la seguridad desde la infraestructura
+            hasta el código.
+          </p>
+          <!--<button class="button">View More</button>-->
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+          <div class="card-image">
+            <img src="assets/Quali.jpeg" alt="Ivan" class="card-img">
           </div>
-        </div> <!-- termina carousel Js -->
+        </div>
+        <div class="card-content">
+          <h2 class="name">Ivan Ocampo</h2>
+          <p class="description">
+            Programador backend especializado en la lógica, los datos y la infraestructura.
+            Tengo experiencia en bases de datos, la creación de APIs para la
+            comunicación entre servicios y el despliegue de soluciones escalables en la nube. Tengo una visión
+            integral del desarrollo, con conocimientos del servidor como del cliente, lo que me
+            permite crear soluciones tecnológicas robustas y completas.
+            Trabajé en la Bolsa Mexicana de Valores, me encargué del
+            control de calidad (QA) de los
+            ambientes previos. Fui responsable de la ejecución de planes de prueba, la detección y
+            documentación de defectos, y de asegurar la estabilidad e integridad de los sistemas antes de su
+            implementación en producción.
+          </p>
+          <button class="button">View More</button>
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+          <div class="card-image">
+            <img src="assets/dan2.jpeg" alt="Gus" class="card-img">
+          </div>
+        </div>
+        <div class="card-content">
+          <h2 class="name">Gustavo De La Cruz</h2>
+          <p class="description">
+            Ingeniero en Informática del IPN con especialidad en ciberseguridad (último año).
+            Con certificaciones en el área de Hacking.
+            Apasionado por la ciberseguridad y el desarrollo web.
+            Con experiencia en pentesting, análisis de vulnerabilidades, desarrollo de herramientas en Python y
+            desarrollo backend con Node.js, JavaScript, bases de datos, frameworks, etc.
+            También manejo redes y protocolos, lo que me permite integrar la seguridad desde la infraestructura
+            hasta el código.
+          </p>
+          <!--<button class="button">View More</button>-->
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+          <div class="card-image">
+            <img src="assets/gasapo.jpeg" alt="Miguel" class="card-img">
+          </div>
+        </div>
+        <div class="card-content">
+          <h2 class="name">Miguel Gomez</h2>
+          <p class="description">
+            Ingeniero en Informática del IPN con especialidad en ciberseguridad (último año).
+            Con certificaciones en el área de Hacking.
+            Apasionado por la ciberseguridad y el desarrollo web.
+            Con experiencia en pentesting, análisis de vulnerabilidades, desarrollo de herramientas en Python y
+            desarrollo backend con Node.js, JavaScript, bases de datos, frameworks, etc.
+            También manejo redes y protocolos, lo que me permite integrar la seguridad desde la infraestructura
+            hasta el código.
+          </p>
+          <!--<button class="button">View More</button>-->
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+          </div>
+        </div>
+        <!-- termina carousel Js -->
+        </div>
       </section>
     </div>
     <div class="relative py-10 md:py-20 bg-fog-white !pb-0 bg-white" data-astro-cid-wnwsomcx="">
@@ -826,8 +777,7 @@
     </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="swiper-init.js"></script>
-  <script src="carousel-controls.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
