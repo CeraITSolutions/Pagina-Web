@@ -1,49 +1,10 @@
-/*document.addEventListener('DOMContentLoaded', function () {
-createCarrusel();
-});
-
-const info = [
-    rock = {
-        Image: 'i',
-        name: 'RicardoRam',
-        info: "lorem ipsum dolor sit amet"
-    },
-
-    qualy= {
-        Image: 'i',
-        name: 'Qualy',
-        info: "lorem ipsum dolor sit amet"
-    },
-
-    dan = {
-        Image: 'i',
-        name: 'Barney',
-        info: "lorem ipsum dolor sit amet"
-    },
-
-    miguel= {
-        Image: 'i',
-        name: 'Gorda',
-        info: "lorem ipsum dolor sit amet"
-    }
-]
-
-function createCarrusel(){
-    info.forEach(participantes => {
-        const nombre = document.querySelector('h2 .name');
-        nombre.appendChild = participantes.name[0];
-        console.log(participantes.name);
-    });
-}*/
-
-
-
-const swiper = new Swiper('.mySwiper', {
+document.addEventListener('DOMContentLoaded', function() {
+  const swiper = new Swiper('.mySwiper', {
     // Configuración básica
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 40,
     loop: true,
-    loopFillGroupWithBlank: true,
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -92,6 +53,7 @@ const swiper = new Swiper('.mySwiper', {
   });
 
   window.teamSwiper = swiper;
+});
 
 function goToSlide(index) {
   if (window.teamSwiper) {
@@ -108,5 +70,17 @@ function nextSlide() {
 function prevSlide() {
   if (window.teamSwiper) {
     window.teamSwiper.slidePrev();
+  }
+}
+
+function startAutoplay() {
+  if (window.teamSwiper) {
+    window.teamSwiper.autoplay.start();
+  }
+}
+
+function stopAutoplay() {
+  if (window.teamSwiper) {
+    window.teamSwiper.autoplay.stop();
   }
 }

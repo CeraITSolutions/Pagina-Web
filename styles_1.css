@@ -5114,21 +5114,20 @@ button.swiper-pagination-bullet {
     background: var(--color-primary);
 }
 
-.fondo-imagen{
+.fondo-imagen {
     position: relative;
     overflow: hidden;
 }
 
-.fondo-imagen::before{
+.fondo-imagen::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url("assets/Fondo_principal.jpg") center/cover no-repeat;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("assets/Fondo_principal.jpg") center/cover no-repeat;
     filter: blur(6px);
     z-index: -1;
 }
 
-<<<<<<< HEAD
 .imagen-fondo>* {
     position: relative;
     z-index: 0;
@@ -5206,9 +5205,4 @@ footer {
     margin-bottom: 1rem;
     text-align: center;
     line-height: 120%;
-=======
-.imagen-fondo > * {
-  position: relative;
-  z-index: 0; 
->>>>>>> quallybranch
 }
