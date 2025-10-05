@@ -5,10 +5,22 @@
 
 
 html{
+  scroll-margin-top: var(--header-height, 20px) !important;
   font-size: 62.5%;
+  scroll-behavior: smooth;
   box-sizing: border-box;
   scroll-snap-type: y mandatory;
 }
+
+:target {
+  outline: none;
+  position: relative;
+}
+
+.anchor-highlight {
+  animation: anchorFlash 900ms ease-out;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -84,6 +96,8 @@ body{
     align-content: center;
   }
 }
+
+
 
 
 
